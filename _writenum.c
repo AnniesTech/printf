@@ -1,11 +1,12 @@
-nclude "main.h"
+#include "main.h"
 #include <stdarg.h>
 
 /**
-    * format_decimal - prints decimal and ints
-      * @num: number provided
-        * Return: amount of chars added
-	  */
+ * _writenum - prints decimal and ints
+ * @num: number provided
+ * Return: amount of chars added
+ */
+
 int _writenum(int num)
 {
 	int i = 0, dec_chars = 0;

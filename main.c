@@ -9,9 +9,6 @@
   */
 int main(void)
 {
-	    
-	_printf("Copiamos esta chimbada\n");
-	printf("somos bobos\n");
 
 	_printf("Character:[%c]\n", 'H');
 	printf("Character:[%c]\n", 'H');
