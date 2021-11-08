@@ -47,18 +47,3 @@ int format_percent(va_list percent)
 	_write('%');
 	return (1);
 }
-
-/**
-  * format_decimal - prints decimal and ints
-  * @num: number provided
-  * Return: amount of chars added
-  */
-int format_decimal(va_list num)
-{
-	int i = 0;
-	int final_print = 0;
-
-	i = va_arg(num, int);
-	final_print = _writenum(i);
-	return (final print);
-}
