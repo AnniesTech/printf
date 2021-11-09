@@ -27,6 +27,7 @@ int _writenum(int num)
 			_write('-');
 			i++;
 			num = num / 10;
+			dec_chars += 2;
 		}
 		else
 		{
