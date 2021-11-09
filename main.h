@@ -22,5 +22,6 @@ int get_funk(const char *format, print_s spec[], va_list info);
 int format_char(va_list c);
 int format_string(va_list s);
 int format_percent(va_list percent);
+int format_decimal(va_list num);
 
 #endif
