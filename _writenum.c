@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 #include <stdarg.h>
 
 /**
@@ -19,9 +20,20 @@ int _writenum(int num)
 	}
 	if (num < 0)
 	{
-		_write('-');
-		dec_chars += 1;
-		num = num * -1;
+		if (num == INT_MIN)
+		{
+			num = INT_MAX;
+			holder[i] = (num % 10) + 49;
+			_write('-');
+			i++;
+			num = num / 10;
+		}
+		else
+		{
+			_write('-');
+			dec_chars += 1;
+			num = num * -1;
+		}
 	}
 	for (; num >= 1; dec_chars++, i++)
 	{
