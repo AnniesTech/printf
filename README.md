@@ -8,7 +8,7 @@ It returns the count of printed characters when the function is successful and -
 + All the files are to be compiled on Ubuntu 14.04 LTS.
 + You must download all the files contained in this repository in order for this function to work.
 + To use the _printf function, create a file .c and you can use the following example to try:
-	<p> <b> _printf("This is a test"); </b> </p>
+		<p> <b> _printf("This is a test"); </b> </p>
 + Include the "main.h" header file on the functions using the _printf.
 + Compile your code with 'gcc -Wall -Werror -Wextra -pedantic *.c'.
 
